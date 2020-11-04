@@ -1,19 +1,18 @@
 Particle[] group = new Particle[30];
-
 void setup() {
   size(400, 400);
-  	for(int i = 0; i < group.length; i++) {
-    		group[i] = new Particle();
-    		group[0] = new OddballParticle();
-  	}
+  for(int i = 0; i < group.length; i++) {
+    group[i] = new Particle();
+    group[0] = new OddballParticle();
+  }
 }
 void draw()
 {
   background(173,216,230);
-  	for(int i = 0; i < group.length; i++) {
-        	group[i].show();
-     		group[i].move();
-  	}
+    for(int i = 0; i < group.length; i++) {
+     group[i].show();
+     group[i].move();
+  }
 }
  class Particle {
    double myX, myY, Spd, Ang;
