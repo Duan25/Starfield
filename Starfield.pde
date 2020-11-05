@@ -37,16 +37,13 @@ void draw()
      arc((float)myX, (float)myY, 60, 70, 0, PI);
   }
  void mushroomCap() {
-   strokeWeight(30);
-   strokeJoin(ROUND);
-   arc((float)myX, (float)myY - 0.5, 65, 50, PI, 2*PI, CHORD);
+   arc((float)myX, (float)myY + 15, 95, 90, PI, 2*PI);
    fill(255);
    stroke(255);
-   strokeWeight(5);
-   circle((float)myX, (float)myY - 12, 30);
+   ellipse((float)myX, (float)myY - 8, 30, 30);
    strokeWeight(1);
-   arc((float)myX - 47, (float)myY - 15, 30, 30, radians(-50), radians(96));
-   arc((float)myX + 47, (float)myY - 15, 30, 30, radians(85), radians(230));
+   arc((float)myX - 43, (float)myY - 9, 30, 30, radians(-45), radians(108));
+   arc((float)myX + 43, (float)myY - 9, 30, 30, radians(70), radians(224));
  }
  void mushroomEyes() {
    fill(0);
